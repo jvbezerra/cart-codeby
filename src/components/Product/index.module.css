@@ -1,13 +1,10 @@
 .product {
   display: flex;
-  gap: 10px;
+  gap: 20px;
 }
 
 .product__image {
-  width: 100%;
-  max-width: 150px;
-  aspect-ratio: 1 / 1;
-  border: 1px solid darkgray;
+  border: 1px solid darkgray !important;
 }
 
 .product__details {
@@ -19,7 +16,7 @@
 
 .product__title {
   line-height: 1;
-  font-size: 1.2rem;
+  font-size: 1rem;
 }
 
 .product__price {

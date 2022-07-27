@@ -1,3 +1,4 @@
+import Image from 'next/image'
 import styles from './index.module.css'
 
 type Props = {
@@ -7,10 +8,12 @@ type Props = {
 export default function Product({ item }: Props) {
   return (
     <li className={styles.product}>
-      <img
+      <Image
         className={styles.product__image}
         alt={item.name}
         src={item.imageUrl}
+        width="100px"
+        height="100px"
       />
       <div className={styles.product__details}>
         <h2 className={styles.product__title}>{item.name}</h2>
